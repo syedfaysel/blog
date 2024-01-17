@@ -2,6 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
 
+export const metadata = {
+  title: "cs guy writes",
+  description: "Syed Faysel Ahammad Rajo's blog",
+}
+
 export default function RootLayout({
   children,
 }: {
