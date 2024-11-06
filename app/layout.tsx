@@ -45,7 +45,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="gBPl8PRPQlE7TZUTQTRJ8O1nLvNc1lso7IqyNYWzrTY" />
       </head>
       <body>
-        <div className="mx-auto  max-w-2xl px-6">
+        <div className="mx-auto  max-w-screen-xl px-6">
           {header}
           {children}
           {footer}

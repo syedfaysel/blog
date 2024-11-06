@@ -285,6 +285,8 @@ Here's some of the main tools/software I used for the job.
 - [VSCode](https://code.visualstudio.com/): Code editor.
 - [Pixaki](https://rizer.co/): iPad pixel art editor to draw and touch up the sprites (which to be honest, I mostly traced from Pokemon).
 
+<iframe class="aspect-video video" src="https://www.youtube.com/embed/QIIc5EYSZpw?si=55HyWm7DvHP5DGQJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
 ## Summary
 
 That pretty much sums up my experience of implementing RPG combat in [PICO-8](https://www.lexaloffle.com/pico-8.php). Even with the lo-fi, 80's era constraints, I found that the core problems—like game design and event modelling—are still timeless.
