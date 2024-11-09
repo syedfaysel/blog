@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "cs guy writes",
   description: "Syed Faysel Ahammad Rajo's blog",
-}
+};
 
 export default function RootLayout({
   children,
@@ -23,7 +25,9 @@ export default function RootLayout({
           alt={"logo"}
         />
         <Link href="/">
-          <h1 className="text-2xl text-white font-bold mt-4">Syed Faysel Writes</h1>
+          <h1 className="text-2xl text-white font-bold mt-4">
+            Syed Faysel Writes
+          </h1>
         </Link>
         <p className="text-slate-300">🤟 Welcome to my articles & blogs. 💻</p>
       </div>
@@ -33,7 +37,8 @@ export default function RootLayout({
   const footer = (
     <footer>
       <div className="border-t border-slate-400 mt-12 py-6 text-center text-slate-400">
-        <h3>&copy; Syed Faysel Ahammad Rajo | 2024</h3><br />
+        <h3>&copy; Syed Faysel Ahammad Rajo | 2024</h3>
+        <br />
         <p>Design - Pixegami. I literally copied</p>
       </div>
     </footer>
@@ -42,14 +47,19 @@ export default function RootLayout({
   return (
     <html>
       <head>
-        <meta name="google-site-verification" content="gBPl8PRPQlE7TZUTQTRJ8O1nLvNc1lso7IqyNYWzrTY" />
+        <meta
+          name="google-site-verification"
+          content="gBPl8PRPQlE7TZUTQTRJ8O1nLvNc1lso7IqyNYWzrTY"
+        />
       </head>
       <body>
-        <div className="mx-auto  max-w-screen-xl px-6">
-          {header}
+        <Navbar />
+        <div className="mx-auto  max-w-screen-xl px-6 min-h-[68vh]">
+          {/* {header} */}
           {children}
-          {footer}
         </div>
+        {/* {footer} */}
+        <Footer/>
       </body>
     </html>
   );
