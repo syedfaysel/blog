@@ -3,12 +3,12 @@ title: "Binary Search"
 subtitle: "Implementing  discreate & continuous binary search in c++"
 date: "31-01-2024"
 author: "Syed Faysel Ahammad Rajo"
+tags: ["binary search", "test"]
 ---
 
 ## Intro
 
-Binary search is a search algorithm to search elements in a [monotonous array](). 
-
+Binary search is a search algorithm to search elements in a [monotonous array]().
 
 ## Discreate Binary Search implementation
 
@@ -35,7 +35,7 @@ int32_t main(){
 	int to_find; // value to search for
 	cin >> to_find;
 
-	int lo = 0, hi = n - 1; 
+	int lo = 0, hi = n - 1;
 	// search space or range [lo, hi]
 	int mid;
 
@@ -59,6 +59,7 @@ int32_t main(){
 }
 
 ```
+
 Time Complexity: **O(log n)**
 
-> Connect me on  [github](https://github.com/syedfaysel). 
+> Connect me on [github](https://github.com/syedfaysel).

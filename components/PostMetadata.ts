@@ -3,5 +3,6 @@ export interface PostMetadata {
   date: string;
   subtitle: string;
   slug: string;
-  author: String;
+  author: string;
+  tags: string[];
 }
