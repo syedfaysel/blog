@@ -92,8 +92,9 @@ npm install @reduxjs/toolkit react-redux
 ### Slice 
 
 
-countersSlice.js
-```JavaScript
+countersSlice.js  
+
+```js
   
   import {createSlice} from "@reduxjs/toolkit"
 
@@ -119,14 +120,11 @@ countersSlice.js
     }
   })
 
-
   export default countersSlice.reducer; // NOTICE it's singular 'reducer'
   export const {increment, decrement} = countersSlice.actions; // NOTICE, it's plural 'actions'
 
   // Deafult export reducer 
   // named export actions: action name are the similar as partial reducer function name. i.e increment, decrement
-
-
 
 ```
 
@@ -141,10 +139,9 @@ Further Terminologies:
 ONLY ONE **store** for the entire application (create it inside the src folder). It only requires it's  `reducer`
 
 
-store.js
+store.js  
 
-```JavaScript
-
+```js
 import {configureStore} from "@reduxjs/toolkit";
 import countersReducer from "../features/counters/countersSlice.js";
 
@@ -161,9 +158,7 @@ const store = configureStore({
   }
 })
 
-
 export default store;
-
 ```
 
 
@@ -174,8 +169,8 @@ Using `Provider` from react-redux
 Wrap the `<App />` component with Provider along with `store` property. 
 
 in the main.jsx file 
-```htm
 
+```htm
 ...
 
 <Provider store={store}>
@@ -206,15 +201,15 @@ const counters = useSelector((state)=> state.counters); // from the redux store
 - these are action creator
 - action creator takes only ONE parameter (which is recieved as action.payload)
 
-use case:
-```JavaScript
+use case:  
+
+```js
 
 const dispatch = useDispatch();
 
 const handleIncrement = (counterId) => {
   dispatch(increment(counterId))
 }
-
 ```
 
 ### More explore:
